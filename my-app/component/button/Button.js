@@ -1,7 +1,7 @@
-export default function Button(props){
+export default function Button({text}){
     return (
         <>
-        <button>{props.text}</button>
+        <button>{text}</button>
         </>
     )
 }
