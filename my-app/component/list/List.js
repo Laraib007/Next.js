@@ -1,19 +1,21 @@
+import { useState } from "react";
 import Button from "../button/Button";
 import Item from "../item/Item";
-import { useState } from "react";
+
 export default function List({}){
-    const [arr, setArr] = useState(["A","E","I","O","U"]);
-   const newAr = arr.map(items  =>  { 
-       return <Item key={items} text = {items} />
+    const [arr, setArr] = useState(["Labi","Lrb","Laraib"]);
+    const newArr = arr.map(items => {
+       return <Item text={items} />
+       
     })
-    const addHandler =()=>{
-        setArr([...arr, "new Item"])
+    const addHandler = ()=>{
+        setArr([...arr, "New Value Add Krdi Gai Hai"])
     }
     return (
         <>
         <ul>
-            {newAr}
-            <Button click={addHandler} text="Add" />
+            {newArr}
+            <Button click={addHandler} text={"Add Item"} />
         </ul>
         </>
     )

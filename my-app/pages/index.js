@@ -1,4 +1,3 @@
-import Button from "@/component/button/Button";
 import List from "@/component/list/List";
 
 export default function Home() {

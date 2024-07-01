@@ -1,9 +1,9 @@
 export default function Item({text}){
     return (
         <>
-        <li>
+        <ul>
             {text}
-        </li>
+        </ul>
         </>
     )
 }
