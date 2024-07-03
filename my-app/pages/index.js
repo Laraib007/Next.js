@@ -1,4 +1,4 @@
-import List from "@/component/list/List";
+import Cards from "@/component/cards/Cards";
 
 export default function Home() {
 
@@ -8,8 +8,7 @@ export default function Home() {
     <>
     
     <h1>My Name is Laraib</h1>
-    <List />
-    
+    <Cards />
     </>
   );
 }
