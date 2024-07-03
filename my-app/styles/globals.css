@@ -39,6 +39,22 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 }
+/* --------------------CUSTOM CSS----------------------- */
+.labikhan{
+  width:  100%;
+  max-width: 1000pxpx;
+  display: flex;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.labi2{
+  max-width: 318px;
+  padding: 20px;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
