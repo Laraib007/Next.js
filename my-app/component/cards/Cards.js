@@ -1,9 +1,9 @@
-import Cards from "@/component/cards/Cards";
+
 import React, { useEffect, useState } from 'react';
 import Head  from 'next/head';
 import Image from 'next/image'
 
-export default function Card ({labi}){
+export default function Cards ({labi}){
   const [items, setItems] = useState([])
   const [visible, setVisible] = useState(4)
 
