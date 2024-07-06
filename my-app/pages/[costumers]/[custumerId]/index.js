@@ -4,7 +4,7 @@ import {useRouter} from "next/router"
 import { useEffect } from "react";
 export default function (){
     const router = useRouter()
-    const {CustomerId} = router.query;
+    const {custumerId} = router.query;
    
    
     return (
@@ -12,15 +12,18 @@ export default function (){
     <div>
      <h1>Project Page</h1>
      { Db.map((userDet) => {
-  useEffect(()=>{
-    let urlLast = window.location.href.slice(-1)
-    let last=  Db.filter((x)=> x.id == urlLast)
+        
+        let usePro = userDet.name + userDet.id
+    let last=  Db.filter((x)=> x.id )
+    if(usePro == custumerId) {
+        console.log("working")
+        return <h1> <Link href={`/costumers/${userDet.name}/${userDet.project}`}>{userDet.project}</Link></h1>
+    }
 
-}, [])
        
-  return <h1> <Link href={`/costumers/${userDet.name}/${userDet.project}`}>{last}</Link></h1>
+  
  })}
- 
+
     </div>
      </>
      
