@@ -17,4 +17,5 @@ export function save(name, project, projectDetail){
         id: data.length + 1,
         name, project, projectDetail
     })
+    fs.writeFileSync(filePath, JSON.stringify(data))
 }
